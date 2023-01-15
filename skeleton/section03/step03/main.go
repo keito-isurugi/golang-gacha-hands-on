@@ -30,11 +30,15 @@ func inputN() int {
 		}
 		fmt.Println("もう一度入力してください")
 	}
-	return n
+	return 100
 }
 
 // TODO: 引数nで指定された回数だけ関数drawを呼び出す関数drawNを作る
-
+func drawN(n int) {
+	for i := 0; i <= n; i++ {
+		draw()
+	}
+}
 
 func draw() {
 	// 0から99までの間で乱数を生成する
